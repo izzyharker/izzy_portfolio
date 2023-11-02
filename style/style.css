@@ -22,6 +22,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+    font-family: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -48,10 +49,14 @@ table {
 	border-spacing: 0;
 }
 
+* {
+    font-family: 'Fira Code', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 body {
     font-family: 'Fira Code', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: medium;
-    background: linear-gradient(to right, black,rgb(0, 0, 197));
+    background: linear-gradient(to right, rgb(0, 0, 0),rgb(42, 0, 159));
     color: white;
 }
 
@@ -76,11 +81,17 @@ body {
     background: inherit;
     font-size:large;
     color: inherit;
-    word-spacing: 100%;
 }
 
 .header button:hover {
     text-decoration: underline;
+}
+
+.header .active {
+    background-color: white;
+    color:rgb(0, 0, 197);
+    border-radius: 4px;
+    transition-duration: 500ms;
 }
 
 .content-box {
@@ -108,6 +119,19 @@ h1 {
     flex: 5;
     margin: auto;
     text-align: center;
+    justify-content: center;
+}
+
+.home {
+    justify-content: center;
+}
+
+.home-template {
+    height: 7rem;
+    width: 50%;
+    border: 4px solid white;
+    border-radius: 10px;
+    translate: 50%;
 }
 
 .footer {
@@ -116,7 +140,7 @@ h1 {
     justify-content: bottom;
     padding: 0.5rem;
     margin-left: 1rem;
-    word-spacing: 100%;
+    word-spacing: 0%;
     font-size: larger;
 }
 
