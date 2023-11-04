@@ -58,12 +58,14 @@ body {
     font-size: medium;
     background: linear-gradient(to right, rgb(0, 0, 0),rgb(42, 0, 159));
     color: white;
+    overflow: hidden;
 }
 
 .main {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    max-height: 99vh;
     width: 100vw;
     background-color: inherit;
 }
@@ -130,18 +132,25 @@ button {
 .content-box {
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 2rem;
     display: flex;
+    gap: 4rem;
     flex-direction: row;
     justify-content: center;
     flex: 1;
-    height: 100%;
+    max-height: 100vh;
 }
 
 .content-box .title {
     flex: 2;
-    text-align: center;
-    font-size: 3.5rem;
+    text-align: left;
+    font-size: 5rem;
     margin: auto;
+}
+
+.content-box .title p {
+    font-size: 2rem;
+    padding-top: 0.5rem;
 }
 
 h1 {
@@ -153,8 +162,12 @@ h1 {
     margin: auto;
     text-align: center;
     justify-content: center;
+    max-width: 90%;
+    max-height: 80vh;
 }
 
+
+/* This is temporary - will finish home page last*/
 .home {
     justify-content: center;
 }
@@ -166,6 +179,46 @@ h1 {
     border: 4px solid white;
     border-radius: 10rem;
     translate: 50%;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 2rem;
+    max-height: inherit;
+    overflow-y: scroll;
+}
+
+.projects video {
+    max-width: 100%;
+}
+
+.proj {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+}
+
+.video-content {
+    flex: 2;
+    border-radius: 5px;
+}
+
+.text-content {
+    flex: 3;
+}
+
+.proj1 .text-content {
+    text-align: left;
+}
+
+.proj2 .text-content {
+    text-align: right;
+}
+
+.proj h1 {
+    font-weight: bolder;
 }
 
 .footer {
