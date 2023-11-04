@@ -1,12 +1,16 @@
-// make the 3 content options in dom
-// and then switch between them depending on selection
+// identify the content block
 const content = document.querySelector(".content")
+
+// identify the buttons that will be pressed
 const buttons = [document.querySelector("#homebutton"), document.querySelector("#aboutbutton"), document.querySelector("#projectbutton")];
 
+// three possible sections will show up
 const home = document.querySelector(".home")
 const aboutme = document.querySelector(".about")
 const projects = document.querySelector(".projects")
 
+
+// onclick function - switches content and button style
 function switch_content(option) {
     console.log("clicked button", option)
     buttons.forEach((element) => {
@@ -30,4 +34,5 @@ function switch_content(option) {
     }
 }
 
+// "click" the home button on webpage load
 document.onload(document.querySelector("#homebutton").click());
