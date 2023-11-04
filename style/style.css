@@ -198,6 +198,7 @@ h1 {
     flex: 1;
     display: flex;
     gap: 1rem;
+    margin-right: 1rem;
 }
 
 .video-content {
@@ -219,6 +220,10 @@ h1 {
 
 .proj h1 {
     font-weight: bolder;
+}
+
+.text-content p {
+    margin-top: 0.5rem;
 }
 
 .footer {
