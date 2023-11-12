@@ -181,6 +181,29 @@ h1 {
     translate: 50%;
 }
 
+.about {
+    display: flex;
+    gap: 4vh;
+    justify-content: center;
+}
+
+.about .profile_photo {
+    flex: 1;
+    max-height: 50vh;
+    border: 1px solid white;
+}
+
+.profile_photo img {
+    max-height: 50vh;
+    max-width: 100%;
+}
+
+.about .text-content {
+    flex: 1;
+    text-align: left;
+    justify-content: center;
+}
+
 .projects {
     display: flex;
     flex-direction: column;

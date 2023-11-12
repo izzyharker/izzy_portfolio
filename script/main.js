@@ -46,4 +46,4 @@ const tagline = document.getElementById("tagline");
 tagline.textContent = "projects";
 
 // "click" the home button on webpage load
-document.onload(document.querySelector("#homebutton").click());
+document.onload(document.querySelector("#aboutbutton").click());
