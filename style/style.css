@@ -170,7 +170,7 @@ h1 {
 /* This is temporary - will finish home page last*/
 .home {
     justify-content: center;
-    border: 4px solid white;
+    /* border: 4px solid white; */
     height: 80vh;
     width: auto;
 }
