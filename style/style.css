@@ -170,16 +170,19 @@ h1 {
 /* This is temporary - will finish home page last*/
 .home {
     justify-content: center;
+    border: 4px solid white;
+    height: 80vh;
+    width: auto;
 }
 
-.home-template {
-    height: 10rem;
-    width: 50%;
+/* .home-template {
+    height: 20rem;
+    width: 75%;
     justify-content: center;
     border: 4px solid white;
     border-radius: 10rem;
     translate: 50%;
-}
+} */
 
 .about {
     display: flex;
