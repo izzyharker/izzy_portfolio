@@ -272,3 +272,8 @@ h1 {
     width: 90%;
     transition: 0.25s ease all;
 }
+
+.webgl {
+    height: 100%;
+    width: 100%;
+}
